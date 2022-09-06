@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+    
+</script>  
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<form method="POST" >
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <h3>Welcome</h3>
+                <p>You are 30 seconds away from earning your own money!</p>
+            </div>
+            <div class="col-md-9 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Welcome to Paytm Payment</h3>
+                        <div class="row register-form">
+                            <div class="col-md-10">
+                                <div  class="form-group">
+                                    <input id="payment_field" tabindex="1" maxlength="20" size="20"
+                                           name="ORDER_ID" autocomplete="off" class="form-control" >
+                                </div>
+                                <!--  <input type="submit" class="btnRegister"  value="Pay with Paytm"/>   -->
+                                <a  class="btnRegister" style="align : center" onclick=paymentStart() >Pay </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
