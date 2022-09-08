@@ -44,11 +44,11 @@ public class FlightFareServiceApplication {
 	}
 	
 	@Bean
-	public Docket swaggerConfiguration() {
+	public Docket SwaggerConfiguration() {
 		//return a prepared docket instance
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.paths(PathSelectors.ant("/api/*"))
+				.paths(PathSelectors.any())
 				.apis(RequestHandlerSelectors.basePackage("com.fbs.flightfareservice"))
 				.build()
 				.apiInfo(apiDetails());

@@ -23,8 +23,8 @@ const paymentStart = () => {
 						key: 'rzp_test_fwH8eL6IVorLNF',
 						amount: a.amount,
 						Currency: "INR",
-						name: " Smart Contact Manager",
-						description: "Donation ",
+						name: " Flight Booking Payment",
+						description: "Flight Fare ",
 						image:"https://th.bing.com/th/id/OIP.-fmOZ6VFYz5SnqTSZhEv8wHaE8?pid=ImgDet&w=900&h=600&rs=1",
 						order_id: a.id,
 						handler:function (a) {
